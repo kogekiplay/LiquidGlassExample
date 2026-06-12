@@ -38,7 +38,7 @@ This folder is ready to publish as a public GitHub repository:
 git init
 git add .
 git commit -m "Add Liquid Glass bottom accessory sample"
-gh repo create LiquidGlassBottomAccessoryExample --public --source=. --remote=origin --push
+gh repo create LiquidGlassExample --public --source=. --remote=origin --push
 ```
 
 Keep the repo small and focused so other agents can copy the `DemoRootView` pattern directly.
