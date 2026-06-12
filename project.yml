@@ -1,0 +1,41 @@
+name: LiquidGlassBottomAccessoryExample
+options:
+  bundleIdPrefix: com.kogeki.samples
+  deploymentTarget:
+    iOS: "26.0"
+  generateEmptyDirectories: true
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    GENERATE_INFOPLIST_FILE: NO
+    INFOPLIST_FILE: LiquidGlassBottomAccessoryExample/App/Info.plist
+
+targets:
+  LiquidGlassBottomAccessoryExample:
+    type: application
+    platform: iOS
+    sources:
+      - path: LiquidGlassBottomAccessoryExample
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kogeki.samples.LiquidGlassBottomAccessoryExample
+        INFOPLIST_FILE: LiquidGlassBottomAccessoryExample/App/Info.plist
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        DEVELOPMENT_TEAM: ""
+  LiquidGlassBottomAccessoryExampleTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: LiquidGlassBottomAccessoryExampleTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kogeki.samples.LiquidGlassBottomAccessoryExampleTests
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: LiquidGlassBottomAccessoryExample
