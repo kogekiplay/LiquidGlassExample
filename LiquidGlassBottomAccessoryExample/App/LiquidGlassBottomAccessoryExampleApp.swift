@@ -4,7 +4,7 @@ import SwiftUI
 struct LiquidGlassBottomAccessoryExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            DemoRootView()
+            ExampleCatalogView()
         }
     }
 }

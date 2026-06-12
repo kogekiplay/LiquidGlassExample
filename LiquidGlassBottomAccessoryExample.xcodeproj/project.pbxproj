@@ -11,6 +11,7 @@
 		3ADD30349BC7EA79E096D2C1 /* BottomAccessoryReferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29E8F1837A64C40D5718006 /* BottomAccessoryReferenceTests.swift */; };
 		6722EF0A5C27FD19D810CE4C /* DemoRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC0DAD22A2E6920E650757 /* DemoRootView.swift */; };
 		AC6E65E8B0525827EF5C082A /* BottomAccessoryReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0034B8F62F37B8D0E2B59F /* BottomAccessoryReference.swift */; };
+		B68BCC6B5E35CB81C078EF5C /* UIKitGlassDockExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718036E5FF106591FDD67838 /* UIKitGlassDockExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		34940C557A887C996F4A4C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6D66DC6B890F32BE79B7B26C /* LiquidGlassBottomAccessoryExample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LiquidGlassBottomAccessoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718036E5FF106591FDD67838 /* UIKitGlassDockExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitGlassDockExampleView.swift; sourceTree = "<group>"; };
 		7B0034B8F62F37B8D0E2B59F /* BottomAccessoryReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAccessoryReference.swift; sourceTree = "<group>"; };
 		9CDC0DAD22A2E6920E650757 /* DemoRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRootView.swift; sourceTree = "<group>"; };
 		C7945543DB51BDB09EFEAF8F /* LiquidGlassBottomAccessoryExampleTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LiquidGlassBottomAccessoryExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,7 @@
 			children = (
 				7B0034B8F62F37B8D0E2B59F /* BottomAccessoryReference.swift */,
 				9CDC0DAD22A2E6920E650757 /* DemoRootView.swift */,
+				718036E5FF106591FDD67838 /* UIKitGlassDockExampleView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				AC6E65E8B0525827EF5C082A /* BottomAccessoryReference.swift in Sources */,
 				6722EF0A5C27FD19D810CE4C /* DemoRootView.swift in Sources */,
 				0E0142ECB13AB1A7BB02BC2F /* LiquidGlassBottomAccessoryExampleApp.swift in Sources */,
+				B68BCC6B5E35CB81C078EF5C /* UIKitGlassDockExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

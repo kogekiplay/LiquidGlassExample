@@ -1,6 +1,28 @@
-# LiquidGlassBottomAccessoryExample
+# LiquidGlassExample
 
-A minimal iOS 26 SwiftUI sample for the official `TabView` bottom accessory API:
+A focused iOS 26 sample repo for two Liquid Glass bottom-control patterns:
+
+1. a UIKit-backed custom glass dock copied from the final QuotaLens prototype, and
+2. the official SwiftUI `TabView` bottom accessory API.
+
+## UIKit Glass Dock
+
+Open `LiquidGlassBottomAccessoryExample/Features/UIKitGlassDockExampleView.swift`.
+
+This sample demonstrates:
+
+- custom left/right `UIControl` buttons backed by `UIGlassEffect(style: .regular)`
+- a centered `UISegmentedControl` that renders icon + text into each segment
+- a SwiftUI `.glassEffect(.regular.interactive(), in: .capsule)` wrapper so the middle control reads as one glass capsule
+- fixed dock geometry from QuotaLens: `58pt` side buttons, `58pt` control height, `222pt` middle minimum width, `350pt` max dock width
+
+Use this when you need side actions such as add/refresh while keeping a segmented tab control visually aligned in the same bottom row.
+
+## System Bottom Accessory
+
+Open `LiquidGlassBottomAccessoryExample/Features/DemoRootView.swift`.
+
+This sample demonstrates the official APIs:
 
 - `tabViewBottomAccessory { ... }`
 - `tabBarMinimizeBehavior(.onScrollDown)`
@@ -9,13 +31,9 @@ A minimal iOS 26 SwiftUI sample for the official `TabView` bottom accessory API:
 
 Reference article: <https://www.createwithswift.com/enhancing-the-tab-bar-with-a-bottom-accessory/>
 
-## What This Demonstrates
+## Notes
 
 `tabViewBottomAccessory` adds a persistent accessory above the tab bar while the tab bar is expanded. When paired with `.tabBarMinimizeBehavior(.onScrollDown)`, scrolling down lets the system collapse the tab bar and move the accessory into an inline placement with the minimized tab row.
-
-This is useful for compact persistent controls such as a now-playing strip, sync status, or lightweight contextual action.
-
-## What This Does Not Demonstrate
 
 This API does not create arbitrary always-inline action buttons at the leading and trailing edges of the expanded tab bar. If an app needs permanent custom actions in the same expanded row as normal tabs, that is a different interaction model and usually needs either:
 
@@ -29,16 +47,3 @@ This API does not create arbitrary always-inline action buttons at the leading a
 ```
 
 Open `LiquidGlassBottomAccessoryExample.xcodeproj`, or build with XcodeBuildMCP / `xcodebuild`.
-
-## Public Repository Notes
-
-This folder is ready to publish as a public GitHub repository:
-
-```sh
-git init
-git add .
-git commit -m "Add Liquid Glass bottom accessory sample"
-gh repo create LiquidGlassExample --public --source=. --remote=origin --push
-```
-
-Keep the repo small and focused so other agents can copy the `DemoRootView` pattern directly.
